@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="parent">
+            <nav>
+                <h1><span>A</span>shu.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    <i class="fa fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <p>MERN Stack Developer</p>
+                <h1>Hi, I'm<span> Ashu</span><br>Agrawal From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ashu2.JPG" alt="">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm a dedicated MERN Stack Developer passionate about crafting seamless web
+                        experiences. Proficient in JavaScript (Node.js, React, Vue), I
+                        thrive on turning ideas into efficient, scalable code.
+                        Let's connect and explore how we can bring your projects to life!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Back-End Development</span><br>Node, Express, MongoDb, SQL</li>
+                            <li><span>Front-End Development</span><br>HTML, CSS, JavaScript, React.js, Vue.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li style="display:flex;">
+                                <div class="experience-div1">2022 - Present</div>
+                                <div class="experience-div2">Full Stack Developer<br><span>Amarya Business
+                                        Consultancy</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Master of Computer Applications</li>
+                            <li><span>2022</span><br>Bachelor of Computer Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services-------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and user-friendly websites from scratch or enhancing existing ones. Creating
+                        server-side logic, handling databases, and ensuring the backend infrastructure is robust and
+                        scalable</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa fa-gears"></i>
+                    <h2>Full Stack Maintenance and Support</h2>
+                    <p>Providing ongoing maintenance, updates, and support for web applications to ensure they remain
+                        secure and up-to-date</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa fa-gauge-high"></i>
+                    <h2>Web Performance Optimization</h2>
+                    <p>Improving website speed and performance through optimization techniques, caching, and other best
+                        practices. Identifying and resolving issues in existing codebases, ensuring smooth operation of
+                        web applications</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/zaperon.png" alt="">
+                    <div class="layer">
+                        <h3>Zaperon Website</h3>
+                        <p>A visually appealing and user-friendly website interface with a key emphasis on security.
+                            Integrated advanced features such as Zero Trust Network Access (ZTNA) and Single Sign-On
+                            (SSO), ensured not only a sleek design but also a secure and seamless user experience.
+                        </p>
+                        <div>
+                            <a href="https://zaperon.com/" target="_blank">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/radhika.png" alt="">
+                    <div class="layer">
+                        <h3>Business Management System</h3>
+                        <p>It is a comprehensive software solution designed to streamline and optimize various aspects
+                            of business operations. This system includes modules for functions such as finance,
+                            inventory management, project management, and more. It acts as a centralized platform,
+                            fostering efficient communication and collaboration across employees. The system automates
+                            routine tasks, enhances data accuracy, and provides real-time insights through analytics.
+                        </p>
+                        <div>
+                            <a href="https://github.com/ashu-agrawal1/radhikanewapi" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/yt.png" alt="">
+                    <div class="layer">
+                        <h3>YouTube-Clone</h3>
+                        <p>YouTube Clone, a meticulously crafted platform that mirrors the seamless video-sharing
+                            experience of the original while offering a unique touch.
+                        </p>
+                        <div>
+                            <a href="https://youtube-clone-ashu.netlify.app" target="_blank">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://github.com/ashu-agrawal1/Youtube-Clone" style="margin-left: 20px;"
+                                target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <i class="fa fa-paper-plane"></i>
+                        ashuagrawal3000@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        8989655547
+                    </p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="mailform" onsubmit="sendMail(event)">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const backendUrl = "https://vast-blue-piranha-slip.cyclic.app"
+        let tablinks = document.getElementsByClassName("tab-links")
+        let tabcontents = document.getElementsByClassName("tab-contents")
+        function openTab(tab) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tab).classList.add("active-tab")
+        }
+
+        let sidemenu = document.getElementById("sidemenu")
+        function openMenu() {
+            sidemenu.style.right = 0
+        }
+        function closeMenu() {
+            if (getComputedStyle(sidemenu).position == "fixed") {
+                sidemenu.style.right = "-200px"
+            }
+        }
+
+        function sendMail(event) {
+            event.preventDefault()
+            let form = document.getElementById("mailform")
+            let formdata = new FormData(form)
+            let data = {}
+            for (var [key, value] of formdata.entries()) {
+                data[key] = value
+            }
+            fetch(backendUrl + '/visitor-mail', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+        }
+    </script>
+</body>
+
+</html>
