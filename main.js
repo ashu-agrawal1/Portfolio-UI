@@ -13,9 +13,11 @@ function openTab(tab) {
 }
 
 let sidemenu = document.getElementById("sidemenu")
+
 function openMenu() {
     sidemenu.style.right = 0
 }
+
 function closeMenu() {
     if (getComputedStyle(sidemenu).position == "fixed") {
         sidemenu.style.right = "-200px"
@@ -30,6 +32,9 @@ function sendMail(event) {
     for (var [key, value] of formdata.entries()) {
         data[key] = value
     }
+    let msg = document.getElementById("msg")
+    let submitBtn = document.getElementById("submit-btn")
+    submitBtn.disabled = true
     fetch(backendUrl + '/visitor-mail', {
         method: "POST",
         headers: {
@@ -37,4 +42,17 @@ function sendMail(event) {
         },
         body: JSON.stringify(data)
     })
+        .then(res => {
+            submitBtn.disabled = false
+            msg.innerHTML = "Message sent successfully!!!"
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(err => {
+            console.log(err)
+            submitBtn.disabled = false
+            alert("Sorry we encountered error while sending your message!!")
+        })
 }

@@ -398,6 +398,10 @@ form .btn2 {
     cursor: pointer;
 }
 
+form .btn2:disabled {
+    background: transparent;
+}
+
 /* ---------css for small screens--------- */
 
 nav .fa {
@@ -500,4 +504,10 @@ nav .fa {
         font-size: 16px;
     }
 
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
