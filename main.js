@@ -56,3 +56,14 @@ function sendMail(event) {
             alert("Sorry we encountered error while sending your message!!")
         })
 }
+
+
+// scroll to top icon
+const toTop = document.querySelector(".to-top");
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

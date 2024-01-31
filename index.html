@@ -15,7 +15,7 @@
     <div id="header">
         <div class="parent">
             <nav>
-                <h1><span>A</span>shu.</h1>
+                <h1><span>A</span>shu</h1>
                 <ul id="sidemenu">
                     <li><a href="#header" onclick="closeMenu()">Home</a></li>
                     <li><a href="#about" onclick="closeMenu()">About</a></li>
@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1 hidden">
-                    <img src="images/ashu2.JPG" alt="">
+                    <img src="images/me.jpg" alt="">
                 </div>
                 <div class="about-col-2 hidden">
                     <h1 class="sub-title">About Me</h1>
@@ -82,8 +82,8 @@
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
-            <div class="services-list hidden">
-                <div>
+            <div class="services-list">
+                <div class="hidden">
                     <i class="fa fa-code"></i>
                     <h2>Web Development</h2>
                     <p>Building responsive and user-friendly websites from scratch or enhancing existing ones. Creating
@@ -91,14 +91,14 @@
                         scalable</p>
                     <!-- <a href="#">Learn more</a> -->
                 </div>
-                <div>
+                <div class="hidden">
                     <i class="fa fa-gears"></i>
                     <h2>Full Stack Maintenance and Support</h2>
                     <p>Providing ongoing maintenance, updates, and support for web applications to ensure they remain
                         secure and up-to-date</p>
                     <!-- <a href="#">Learn more</a> -->
                 </div>
-                <div>
+                <div class="hidden">
                     <i class="fa fa-gauge-high"></i>
                     <h2>Web Performance Optimization</h2>
                     <p>Improving website speed and performance through optimization techniques, caching, and other best
@@ -114,14 +114,16 @@
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list hidden">
-                <div class="work">
+            <div class="work-list">
+                <div class="work hidden">
                     <img src="images/zaperon.png" alt="">
                     <div class="layer">
                         <h3>Zaperon Website</h3>
                         <p>A visually appealing and user-friendly website interface with a key emphasis on security.
-                            Integrated advanced features such as Zero Trust Network Access (ZTNA) and Single Sign-On
-                            (SSO), ensured not only a sleek design but also a secure and seamless user experience.
+                            Integrated advanced features such as <b>Zero Trust Network Access (ZTNA)</b> and <b>Single
+                                Sign-On
+                                (SSO)</b>, ensured not only a sleek design but also a secure and seamless user
+                            experience.
                         </p>
                         <div>
                             <a href="https://zaperon.com/" target="_blank">
@@ -130,14 +132,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work hidden">
                     <img src="images/radhika.png" alt="">
                     <div class="layer">
                         <h3>Business Management System</h3>
                         <p>It is a comprehensive software solution designed to streamline and optimize various aspects
                             of business operations. This system includes modules for functions such as finance,
-                            inventory management, project management, and more. It acts as a centralized platform,
-                            fostering efficient communication and collaboration across employees. The system automates
+                            inventory management, project management, and more. The system automates
                             routine tasks, enhances data accuracy, and provides real-time insights through analytics.
                         </p>
                         <div>
@@ -147,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work hidden">
                     <img src="images/yt.png" alt="">
                     <div class="layer">
                         <h3>YouTube-Clone</h3>
@@ -177,11 +178,11 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p>
                         <i class="fa fa-paper-plane"></i>
-                        ashuagrawal3000@gmail.com
+                        <a href="mailto:ashuagrawal3000@gmail.com">ashuagrawal3000@gmail.com</a>
                     </p>
                     <p>
                         <i class="fa fa-phone"></i>
-                        8989655547
+                        <a href="tel:8989655547">8989655547</a>
                     </p>
                     <div class="social-icons">
                         <!-- <a href="#">
@@ -210,6 +211,10 @@
                 </div>
             </div>
         </div>
+        <!-- -----------scroll to top---------- -->
+        <a href="#header" class="to-top">
+            <img src="images/ic_scroll_top.svg" alt="">
+        </a>
     </div>
     <script src="main.js"></script>
     <script src="animations.js"></script>
