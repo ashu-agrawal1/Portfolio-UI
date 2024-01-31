@@ -184,7 +184,7 @@
                         8989655547
                     </p>
                     <div class="social-icons">
-                        <a href="#">
+                        <!-- <a href="#">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                         <a href="#">
@@ -192,8 +192,8 @@
                         </a>
                         <a href="#">
                             <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
+                        </a> -->
+                        <a href="https://www.linkedin.com/in/ashu-agrawal-37826b225">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
@@ -210,50 +210,7 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        const backendUrl = "https://vast-blue-piranha-slip.cyclic.app"
-        let tablinks = document.getElementsByClassName("tab-links")
-        let tabcontents = document.getElementsByClassName("tab-contents")
-        function openTab(tab) {
-            for (tablink of tablinks) {
-                tablink.classList.remove('active-link')
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove('active-tab')
-            }
-            event.currentTarget.classList.add('active-link')
-            document.getElementById(tab).classList.add("active-tab")
-        }
-
-        let sidemenu = document.getElementById("sidemenu")
-        function openMenu() {
-            sidemenu.style.right = 0
-        }
-        function closeMenu() {
-            if (getComputedStyle(sidemenu).position == "fixed") {
-                sidemenu.style.right = "-200px"
-            }
-        }
-
-        function sendMail(event) {
-            event.preventDefault()
-            let form = document.getElementById("mailform")
-            let formdata = new FormData(form)
-            let data = {}
-            for (var [key, value] of formdata.entries()) {
-                data[key] = value
-            }
-            fetch(backendUrl + '/visitor-mail', {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
