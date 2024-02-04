@@ -67,3 +67,10 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 })
+
+
+// removing background fixed in iphone device
+let _isIOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+if (_isIOS) {
+    document.getElementById("header").classList.add('is-ios')
+} 
