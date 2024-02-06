@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    scroll-snap-align: start;
 }
 
 .is-ios {
@@ -113,7 +115,8 @@ nav ul li a:hover::after {
 /* ----------about--------- */
 #about {
     padding: 80px 0 40px 0;
-    color: #ababab
+    color: #ababab;
+    scroll-snap-align: start;
 }
 
 .row {
@@ -209,6 +212,8 @@ nav ul li a:hover::after {
 /* ------------services--------- */
 #services {
     padding: 50px 0 30px 0;
+    scroll-snap-align: start;
+    scroll-margin-top: 10px;
 }
 
 .services-list {
@@ -255,6 +260,7 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
+    scroll-snap-align: start;
 }
 
 .work-list {
@@ -341,6 +347,11 @@ nav ul li a:hover::after {
 }
 
 /* ---------------contact------------ */
+
+#contact {
+    scroll-snap-align: start;
+}
+
 textarea {
     resize: vertical;
 }
@@ -562,30 +573,7 @@ nav .fa {
     display: block;
 }
 
-/* ---------animations---------- */
-.hidden {
-    opacity: 0.4;
-    transition: all 0.5s ease-in;
-    filter: blur(5px);
-    transform: translateY(100px);
-}
-
-.hidden2 {
-    transform: translatex(-200px);
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
+/* -------------scrollbar--------------- */
 ::-webkit-scrollbar {
     width: 12px;
 }
