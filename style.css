@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* scroll-snap-type: y proximity; */
 }
 
 body {
@@ -23,7 +22,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* scroll-snap-align: start; */
 }
 
 .is-ios {
@@ -116,7 +114,6 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0 40px 0;
     color: #ababab;
-    /* scroll-snap-align: start; */
 }
 
 .row {
@@ -212,8 +209,6 @@ nav ul li a:hover::after {
 /* ------------services--------- */
 #services {
     padding: 50px 0 30px 0;
-    /* scroll-snap-align: start;
-    scroll-margin-top: 10px; */
 }
 
 .services-list {
@@ -260,7 +255,6 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
-    /* scroll-snap-align: start; */
 }
 
 .work-list {
@@ -347,10 +341,6 @@ nav ul li a:hover::after {
 }
 
 /* ---------------contact------------ */
-
-#contact {
-    /* scroll-snap-align: start; */
-}
 
 textarea {
     resize: vertical;
@@ -585,4 +575,31 @@ nav .fa {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#642bff, #ff22e6);
     border-radius: 8px;
+}
+
+@media only screen and (min-width: 1280px) {
+    html {
+        scroll-snap-type: y proximity;
+    }
+
+    #header {
+        scroll-snap-align: start;
+    }
+
+    #about {
+        scroll-snap-align: start;
+    }
+
+    #services {
+        scroll-snap-align: start;
+        scroll-margin-top: 10px;
+    }
+
+    #portfolio {
+        scroll-snap-align: start;
+    }
+
+    #contact {
+        scroll-snap-align: start;
+    }
 }
