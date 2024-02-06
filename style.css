@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .is-ios {
@@ -116,7 +116,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0 40px 0;
     color: #ababab;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .row {
@@ -212,8 +212,8 @@ nav ul li a:hover::after {
 /* ------------services--------- */
 #services {
     padding: 50px 0 30px 0;
-    scroll-snap-align: start;
-    scroll-margin-top: 10px;
+    /* scroll-snap-align: start;
+    scroll-margin-top: 10px; */
 }
 
 .services-list {
@@ -260,7 +260,7 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .work-list {
@@ -349,7 +349,7 @@ nav ul li a:hover::after {
 /* ---------------contact------------ */
 
 #contact {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 textarea {
