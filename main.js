@@ -1,4 +1,4 @@
-const backendUrl = "https://vast-blue-piranha-slip.cyclic.app"
+const backendUrl = "https://ashu-port-api.netlify.app/.netlify/functions/api"
 let tablinks = document.getElementsByClassName("tab-links")
 let tabcontents = document.getElementsByClassName("tab-contents")
 function openTab(tab) {
